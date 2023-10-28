@@ -1,14 +1,11 @@
 import Imagenes from "../../assets/JS/Data-Base";
 import { fetchAPI } from "../../assets/JS/waterApp";
 
-function Boton ({ buscador }) {
+function Boton ({ buscador, setBuscar }) {
 
     const onSerch = () =>{
-        console.log("sdadasd", buscador);
-        if (buscador === '') {
-            return <p>Error</p>
-        }
-        fetchAPI(buscador)
+        
+        setBuscar(true)
     }
 
     return (

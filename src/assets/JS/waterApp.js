@@ -1,7 +1,11 @@
-export const fetchAPI = async () =>{
+export const fetchAPI = async ( lugar ) =>{
+
+    if (!lugar) {
+        lugar = 'Suchiapa'
+    } 
 
         const key = 'key=52803b2eb74c427f8bb210616232110';
-        const URL = `http://api.weatherapi.com/v1/current.json?${key}&q=tuxtla gutierrez`
+        const URL = `http://api.weatherapi.com/v1/current.json?${key}&q=${lugar}`
 
         let info = [ ]
 
@@ -25,8 +29,6 @@ export const fetchAPI = async () =>{
                 humidity: info.current.humidity,
 
             }
-
-            console.log(weatherData);
 
             console.log('Comsuption Started');
 
