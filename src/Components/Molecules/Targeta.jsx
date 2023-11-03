@@ -37,10 +37,10 @@ function Targeta() {
 
           <p className="Grados-C">{data.temp_c}ºC</p>
 
-          <h1 className="Hora">{data.localTime}</h1>
+         
 
           <h1 className="Nombre">{data.name}</h1>
-          <img className="Calendario" src={Imagenes.Data.ImagenCalendario} />
+          
           <p className="Grados-F">{data.temp_f}ºF</p>
           <img
             className="Imagen-Grados-F"

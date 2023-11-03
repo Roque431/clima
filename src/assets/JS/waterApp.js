@@ -1,6 +1,6 @@
 export const fetchAPI = async (lugar) => {
   if (!lugar) {
-    lugar = "Suchiapa";
+    lugar = "Tuxtla Gutierrez";
   }
 
   const key = "key=52803b2eb74c427f8bb210616232110";
